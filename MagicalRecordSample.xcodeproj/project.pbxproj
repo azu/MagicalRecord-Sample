@@ -15,6 +15,8 @@
 		73C6552314BC376F00CB60BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C6552214BC376F00CB60BA /* main.m */; };
 		73C6552714BC376F00CB60BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C6552614BC376F00CB60BA /* AppDelegate.m */; };
 		73C6552A14BC377000CB60BA /* MagicalRecordSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73C6552814BC376F00CB60BA /* MagicalRecordSample.xcdatamodeld */; };
+		73C6554B14BC3C4100CB60BA /* _Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C6554814BC3C4100CB60BA /* _Person.m */; };
+		73C6554C14BC3C4100CB60BA /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C6554A14BC3C4100CB60BA /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +25,17 @@
 		73C6551614BC376F00CB60BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		73C6551814BC376F00CB60BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		73C6551A14BC376F00CB60BA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		73C6551E14BC376F00CB60BA /* MagicalRecordSample-Info.plist */ = {isa = PBXFileReference; path = "MagicalRecordSample-Info.plist"; sourceTree = "<group>"; };
+		73C6551E14BC376F00CB60BA /* MagicalRecordSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MagicalRecordSample-Info.plist"; sourceTree = "<group>"; };
 		73C6552014BC376F00CB60BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		73C6552214BC376F00CB60BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		73C6552414BC376F00CB60BA /* MagicalRecordSample-Prefix.pch */ = {isa = PBXFileReference; path = "MagicalRecordSample-Prefix.pch"; sourceTree = "<group>"; };
-		73C6552514BC376F00CB60BA /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		73C6552414BC376F00CB60BA /* MagicalRecordSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagicalRecordSample-Prefix.pch"; sourceTree = "<group>"; };
+		73C6552514BC376F00CB60BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		73C6552614BC376F00CB60BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		73C6552914BC376F00CB60BA /* MagicalRecordSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MagicalRecordSample.xcdatamodel; sourceTree = "<group>"; };
+		73C6554714BC3C4100CB60BA /* _Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Person.h; sourceTree = "<group>"; };
+		73C6554814BC3C4100CB60BA /* _Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Person.m; sourceTree = "<group>"; };
+		73C6554914BC3C4100CB60BA /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		73C6554A14BC3C4100CB60BA /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 		73C6551C14BC376F00CB60BA /* MagicalRecordSample */ = {
 			isa = PBXGroup;
 			children = (
+				73C6554614BC3C4100CB60BA /* Models */,
 				73C6552514BC376F00CB60BA /* AppDelegate.h */,
 				73C6552614BC376F00CB60BA /* AppDelegate.m */,
 				73C6552814BC376F00CB60BA /* MagicalRecordSample.xcdatamodeld */,
@@ -95,6 +102,17 @@
 				73C6552414BC376F00CB60BA /* MagicalRecordSample-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		73C6554614BC3C4100CB60BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				73C6554714BC3C4100CB60BA /* _Person.h */,
+				73C6554814BC3C4100CB60BA /* _Person.m */,
+				73C6554914BC3C4100CB60BA /* Person.h */,
+				73C6554A14BC3C4100CB60BA /* Person.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +179,8 @@
 				73C6552314BC376F00CB60BA /* main.m in Sources */,
 				73C6552714BC376F00CB60BA /* AppDelegate.m in Sources */,
 				73C6552A14BC377000CB60BA /* MagicalRecordSample.xcdatamodeld in Sources */,
+				73C6554B14BC3C4100CB60BA /* _Person.m in Sources */,
+				73C6554C14BC3C4100CB60BA /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +247,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagicalRecordSample/MagicalRecordSample-Prefix.pch";
 				INFOPLIST_FILE = "MagicalRecordSample/MagicalRecordSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -238,6 +259,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagicalRecordSample/MagicalRecordSample-Prefix.pch";
 				INFOPLIST_FILE = "MagicalRecordSample/MagicalRecordSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -262,6 +284,7 @@
 				73C6552F14BC377000CB60BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
