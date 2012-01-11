@@ -41,8 +41,8 @@
     // 保存した結果を表示
     NSLog(@"MagicalRecord FindAll");
     NSArray *result = [Person findAll];
-    for(id per in result) {
-        NSLog(@"name : %@ | age : %d",[per name],[[per age] integerValue]);
+    for (id per in result) {
+        NSLog(@"name : %@ | age : %d", [per name], [[per age] integerValue]);
     }
 
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
